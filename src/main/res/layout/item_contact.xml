@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_item"
+    android:padding="12dp"
+    android:layout_margin="8dp">
+
+    <CheckBox
+        android:id="@+id/contact_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:buttonTint="@color/Primarycolour" />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/contact_checkbox"
+        android:layout_marginStart="8dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/contact_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_below="@id/contact_name"
+        android:layout_alignStart="@id/contact_name"
+        android:layout_marginTop="4dp" />
+
+    <!-- Expandable details section -->
+    <LinearLayout
+        android:id="@+id/expanded_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_below="@id/contact_number"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <!-- This container will be populated dynamically in the adapter -->
+    </LinearLayout>
+
+</RelativeLayout>

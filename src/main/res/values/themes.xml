@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.ContactsApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Background -->
+        <item name="android:windowBackground">#FFFFFF</item>
+
+        <!-- Status bar customization -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Toolbar and Drawer compatibility -->
+        <item name="actionBarTheme">@style/ThemeOverlay.MaterialComponents.ActionBar</item>
+    </style>
+</resources>

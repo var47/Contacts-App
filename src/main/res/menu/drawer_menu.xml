@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_all_contacts"
+        android:title="All Contacts"
+        android:icon="@android:drawable/ic_menu_agenda" />
+
+    <item
+        android:id="@+id/nav_groups"
+        android:title="Groups"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@android:drawable/ic_menu_preferences" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@android:drawable/ic_lock_power_off" />
+
+    <item
+        android:id="@+id/nav_contacts"
+        android:title="Contacts"
+        android:icon="@drawable/ic_contacts" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile" />
+    <item
+        android:id="@+id/nav_switch_user"
+        android:title="Switch User"
+        android:icon="@drawable/ic_switch_user" />
+
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Name"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/countryCodeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryCodeSpinner"
+        android:layout_marginTop="12dp"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhone"
+        android:layout_marginTop="12dp"
+        android:hint="Optional Note for this number"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonAddNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Number"
+        android:layout_below="@id/editTextNote"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp" />
+
+    <LinearLayout
+        android:id="@+id/phoneNumberContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAddNumber"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/buttonSaveContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Contact"
+        android:layout_below="@id/phoneNumberContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

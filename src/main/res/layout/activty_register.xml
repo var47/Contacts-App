@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".auth.RegisterActivity">
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background" />
+
+    <!-- Password Strength Meter -->
+    <TextView
+        android:id="@+id/passwordStrengthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strength: "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_below="@id/passwordStrengthTextView"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/confirmPasswordEditText"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/loginRedirectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:layout_below="@id/registerButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
